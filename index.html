@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Devi</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Oooo Meri Jaan<br />
+			Do you remember the day we first met?<br />
+			<span class="comments">// 23 oct din tha thursday bhai dooj. </span><br />
+			<span class="comments">// Mene phli baar dekha mujhe lga wow ye to meri honi chahiye.</span><br />
+			Since that day a spark begun;<br />
+			Your everything got imprinted in my heart;<br />
+			fir ek din destiny khud hme mila deti h...<br />
+			plan bnta h gogamedi ka mujhse poochha jata h me mna kr deta hu...<br />
+			fir me poochhta hu kon kon jaa rha h...<br />
+			mujhe pta lgta h tu bhi jaa rhi h..<br />
+			fir kya me sara kaam chhodke ravana ho jata hu...<br />
+			vha milte hain ham ek dusre se...<br />
+			mene fir ek baar tujhe jee bhrke dekha dil me bsa liya...<br />
+			ab jaroorat thi ki btau ki kitna pyuar ho gya h...<br />
+			lekin ek dikkat thi wha kafi log the...<br />
+			or me kuch bolta to mujhe gadi se neeche fenk diya jata...<br />
+			to mene tujhe hint dene shuru kiye...<br />
+			me chhune ke bahane dhundhne lga...<br />
+			koi bhi cheej kisi ko deni hoti me hath aage kr deta jisse touch ho jaye...<br />
+			fir mene ring khud hi utari...<br />
+			or fir khud hi phnai...<br />
+			wo proper hint thi...<br />
+			or mujhe lga ki ab ye smjh gyi h...<br />
+			ki intention kya hain...<br />
+			me fir aage aa jata hu...<br />
+			or vha se shuru hoti h hmari prem kahani...<br />
+			mene bhut himmat krke tera hath pkda...<br />
+			or tune jwab me mera hath or kske pkd liya....<br />
+			wo sbse khushi ka pal tha...<br />
+			ab tk yaad h mujhe wo...<br />
+			fir to kya kya hua wo mujhe tujhe or bhagwan ko pta h bs...<br />
+			<span class="comments">// Now i can't tell you what I am feeling right now.</span><br />
+			I juss want that our Bond will always grow back Stronger;<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			Bubu, I will love you forever;<br />
+			<br>
+			<br>
+			Now If you want to see us smiling, you can touch the heart below<br />
+			<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					हमेशा मेरी रहियो...
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU MERI JAAN<br/>
+					<div class="signature">- Tera Anuj</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 9, 23);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
